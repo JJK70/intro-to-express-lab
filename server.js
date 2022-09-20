@@ -18,6 +18,10 @@ app.get('/', function(req, res) {
   res.redirect ('/home')
 })
 
+app.get('/home', function(req, res) {
+  res.redirect ('/students')
+})
+
 app.get('/students', function(req, res) {
   res.render('students/index', {
     students: students
